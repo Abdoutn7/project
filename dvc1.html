@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylebac.css">
+    <script src="controles.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post" name="f1">
+        <fieldset>
+            <legend>ajout d'un habit</legend>
+            Catégorie: <select name="categorie" id="categorie">
+                <option value="">Selectionner une catégorie</option>
+                <option value="1">Robe de soirée</option>
+                <option value="2">Robe de mariée</option>
+                <option value="3">Caftan</option>
+                <option value="4">Costume</option>
+                <option value="5">Jebba</option>
+            </select><br>
+             Description:<input type="text" name="description" id="description"><br>
+             Taille <input type="radio" name="taille" id="S"> S <input type="radio" name="taille" id="M"> M <input type="radio" name="taille" id="L"> L <input type="radio" name="taille" id="XL"> XL <br>
+             Prix Location: <input type="number" name="prix" id="prix"> DT <br>
+             <input type="reset" value="Annuler"> <input type="button" value="Ajouter" onclick="verif1()">
+
+
+
+        </fieldset>
+    </form>
+    <form action="" method="post" name="f2">
+        <fieldset>
+            <legend>Location d'un habit</legend>
+           
+             Code habit:<input type="text" name="code" id="code"><br>
+             Cin client: <input type="text" name="cin" id="cin">  <br>
+             Durér location : <input type="text" name="duree" id="duree">  <br>
+             <input type="reset" value="Annuler"> <input type="button" value="Louer" onclick="verif2()">
+
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
